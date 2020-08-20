@@ -1,0 +1,1 @@
+# go-ci-pipeline-example
