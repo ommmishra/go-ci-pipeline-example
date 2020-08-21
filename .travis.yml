@@ -1,4 +1,3 @@
-## .travis.yml
 language: go
 
 sudo: false
@@ -8,10 +7,7 @@ go:
   - "1.9"
   - "1.10"
   - "1.11"
-  - "1.14"
-  - "1.15"
   - tip
 
 script:
-  - ./.travis.gofmt.sh
   - go test -v -race $(go list ./... | grep -v vendor)
